@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIMPLE CALCULATOR</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="Main-BG">
+        <div class="Main-content">
+          <h6>Simple Calculator</h6>
+        </div>
+        <div class="display-result">
+          <input type="textbox" id="display" size="45" height="25">
+        </div>
+        <div class="keys"> 
+          <table border="1">
+          <tr><td> <button onclick="clear" id="clear">AC</button></td>
+            <td> <button onclick="del()" id="del">DEL</button></td> 
+          <td><button onclick="equal()" id="equal">=</button></td>
+          <td><button onclick="operator('/')"id="divide">/</button></td>
+          </tr>
+          <tr>
+          <td> <button onclick="keys('7')" id="7" >7</button></td>
+        <td>  <button onclick="keys('8')"id="8">8</button></td>
+          <td><button onclick="keys('9')" id="9">9</button></td>
+          <td>  <button onclick="operator('*')" id="multiply">*</button></td>
+          </tr>
+      <tr>
+        <td> <button onclick="keys('4')"id="4">4</button></td>
+        <td> <button onclick="keys('5')"id="5">5</button></td>
+        <td>  <button onclick="keys('6')" id="6">6</button></td>
+        <td> <button onclick="operator('-')"id="subtract">-</button></td>
+        </tr>
+  <tr>
+          <td>  <button onclick="keys('1')" id="1">1</td>
+          <td> <button onclick="keys('2')" id="2">2</button></td>
+          <td><button onclick="keys('3')" id="3">3</button></td> 
+          <td> <button onclick="operator('+')" id="add">+</button></td>
+          </tr>
+            <tr>
+            <td colspan="2"> <button onclick="keys('0')" id="0">0</button></td>
+            <td> <button onclick="dot('.')" id=".">.</button></td>
+            <td> <button onclick="operator('%')" id="percentile">%</button></td></tr>
+            </table>
+            
+    </div>
+  </div>
+</div>
+    <script src="./script.js"></script>
+  </body>
+</html>
